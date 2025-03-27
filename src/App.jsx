@@ -1,8 +1,10 @@
+import Accordian from "./components/Accordian"
+
 function App() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Test</h1>
+      <Accordian />
     </div>
   )
 }
