@@ -6,7 +6,12 @@ function StarRating({ noOfStar = 5 }) {
   const [hover, setHover] = useState(0);
 
   const handleClick = (currentIndex) => {
-    setRating(currentIndex)
+    if(rating == currentIndex) {
+      setRating(0)
+      setHover(0)
+    } else {
+      setRating(currentIndex)
+    }
   }
 
   const handleMouseEnter = (currentIndex) => {
